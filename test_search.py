@@ -1,4 +1,5 @@
 from youtube_search import YoutubeSearch
+import youtube_search
 
 
 class TestSearch:
@@ -20,3 +21,14 @@ class TestSearch:
     def test_json(self):
         search = YoutubeSearch('test', max_results=10)
         assert isinstance(search.to_json(), str)
+
+import sys
+
+if len(sys.argv) > 1:
+    results = YoutubeSearch(sys.argv[1], max_results=int(sys.argv[2])).to_json()
+    print(results)
+else:
+    youtube_search.print_hi()
+
+
+
