@@ -1,4 +1,4 @@
-from .youtube_search import YoutubeSearch
+from youtube_search import YoutubeSearch
 
 
 class TestSearch:
