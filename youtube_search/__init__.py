@@ -58,4 +58,4 @@ class YoutubeSearch:
         return json.dumps({"videos": self.videos})
 
 def print_hi():
-    print('Hii, this is version 1.1.1')
+    print('Hii, this is version 1.1.2')
